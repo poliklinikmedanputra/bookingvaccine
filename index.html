@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #b22222; /* Dark red color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        footer {
+            font-size: 16px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .section h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .vaccine-list {
+            margin: 0;
+        }
+        .vaccine-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        .vaccine-item h3 {
+            font-size: 18px;
+            margin: 0;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .vaccine-details {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .faq div, .why-choose div {
+            margin-bottom: 15px;
+        }
+        .booking-section {
+            text-align: center;
+        }
+        .booking-button {
+            background-color: #b22222; /* Dark red color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .booking-button:hover {
+            background-color: #a11a1a; /* Slightly darker red */
+        }
+        .translate-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'ms,zh-CN,th,my,km',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!-- Google Translate widget -->
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+    <header>
+        Poliklinik Medan Putra (黄医生诊所)
+        <div id="google_translate_element" class="translate-buttons"></div>
+    </header>
+
+    <div class="container">
+        <section class="section vaccine-list">
+            <h2>Vaccine List</h2>
+            <div class="vaccine-item">
+                <h3>QDENGA (DENGUE VACCINE)</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 190</p>
+                    <p><strong>Function:</strong> Protects against dengue fever.</p>
+                    <p><strong>Recommended Dose:</strong> 3 doses.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>INFLUENZA VACCINE (TETRA) INFLUVAC TETRA ABBOTT</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 75</p>
+                    <p><strong>Function:</strong> Protects against seasonal influenza (4 strains).</p>
+                    <p><strong>Recommended Dose:</strong> Annual vaccination.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>TYPHOID VACCINE TYPBAR BHARAT BIOTECH</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 75</p>
+                    <p><strong>Function:</strong> Protects against typhoid fever.</p>
+                    <p><strong>Recommended Dose:</strong> 1 dose every 2 years.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>MENINGOCOCCAL ACWY VACCINE 1DOSE-MENACTRA MENACTRA</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 150</p>
+                    <p><strong>Function:</strong> Protects against meningococcal disease (ACWY strains).</p>
+                    <p><strong>Recommended Dose:</strong> 1 dose.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>PNEUMOVAX 23 PNEUMOCOCCAL VACCINE 5MG MSD MERCK SHARP & DOHME CORP</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 150</p>
+                    <p><strong>Function:</strong> Protects against pneumococcal disease (23 strains).</p>
+                    <p><strong>Recommended Dose:</strong> 1 dose.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>HPV VACCINE GARDASIL 9 MSD K.K MERCK SHARP & DOHME CORP</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 550</p>
+                    <p><strong>Function:</strong> Protects against human papillomavirus (9 strains).</p>
+                    <p><strong>Recommended Dose:</strong> 2-3 doses depending on age.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>HEPATITIS B VACCINE GENE VAC-B</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 55</p>
+                    <p><strong>Function:</strong> Protects against hepatitis B virus.</p>
+                    <p><strong>Recommended Dose:</strong> 3 doses.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>HAVRIX 1440 INACTIVATED HEPATITIS A VACCINE (ADULT DOSE) GSK</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 160</p>
+                    <p><strong>Function:</strong> Protects against hepatitis A virus.</p>
+                    <p><strong>Recommended Dose:</strong> 2 doses.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>PREVENAR 13 PNEUMOCOCCAL VACCINE PREVENAR 13 PFIZER</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 265</p>
+                    <p><strong>Function:</strong> Protects against pneumococcal disease (13 strains).</p>
+                    <p><strong>Recommended Dose:</strong> 1 dose.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>HEPATITIS B VACCINE EUVAX B SANOFI-PASTUER</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 55</p>
+                    <p><strong>Function:</strong> Protects against hepatitis B virus.</p>
+                    <p><strong>Recommended Dose:</strong> 3 doses.</p>
+                </div>
+            </div>
+            <div class="vaccine-item">
+                <h3>MMR II VACCINE MSD MERCK SHARP & DOHME CORP</h3>
+                <div class="vaccine-details">
+                    <p><strong>Price:</strong> 120</p>
+                    <p><strong>Function:</strong> Protects against measles, mumps, and rubella.</p>
+                    <p><strong>Recommended Dose:</strong> 2 doses.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq">
+            <h2>Frequently Asked Questions (F.A.Q.)</h2>
+            <div>
+                <h3>What is the purpose of vaccines?</h3>
+                <p>Vaccines help protect individuals from various infectious diseases by stimulating the immune system to recognize and fight pathogens without causing the disease itself.</p>
+            </div>
+            <div>
+                <h3>How many doses of each vaccine are required?</h3>
+                <p>The number of doses required varies by vaccine. Some vaccines require multiple doses to build up immunity, while others may require only one dose or periodic boosters.</p>
+            </div>
+            <div>
+                <h3>Are vaccines safe?</h3>
+                <p>Vaccines undergo rigorous testing and continuous monitoring for safety. Most side effects are mild and temporary, such as soreness at the injection site. At Poliklinik Medan Putra (黄医生诊所), we only administer vaccines approved by the Ministry of Health (KKM) to ensure the highest standards of safety and efficacy. Rest assured that your safety is our top priority.</p>
+            </div>
+            <div>
+                <h3>Can vaccines be administered together?</h3>
+                <p>Many vaccines can be administered together in a single visit. Your healthcare provider will follow guidelines to ensure that multiple vaccines can be given safely.</p>
+            </div>
+        </section>
+
+        <section class="section why-choose">
+            <h2>Why Choose Poliklinik Medan Putra?</h2>
+            <div>
+                <h3>KKM-Approved Vaccines</h3>
+                <p>At Poliklinik Medan Putra, we only use vaccines that have been approved by the Ministry of Health (KKM), ensuring that you receive the safest and most effective vaccines available.</p>
+            </div>
+            <div>
+                <h3>Convenient Location</h3>
+                <p>Our clinic is strategically located to ensure easy access for all patients, making it convenient for you to receive your vaccinations.</p>
+            </div>
+            <div>
+                <h3>Efficient and Fast Stock Renewal</h3>
+                <p>We understand the importance of having vaccines readily available. Our clinic ensures a rapid renewal of stock to prevent any delays in your vaccination schedule.</p>
+            </div>
+            <div>
+                <h3>Professional Healthcare Providers</h3>
+                <p>Our team of healthcare professionals is highly trained and experienced in administering vaccines. We are committed to providing you with the highest standard of care and attention.</p>
+            </div>
+            <div>
+                <h3>Updated Guidelines</h3>
+                <p>We stay up-to-date with the latest vaccination guidelines and recommendations to ensure that you receive the most current and relevant information and care.</p>
+            </div>
+            <div>
+                <h3>Multi-Language Support</h3>
+                <p>To better serve our diverse community, we utilize advanced multi-language robots to assist with understanding and communication, ensuring that all our patients receive clear and accurate information.</p>
+            </div>
+        </section>
+
+        <section class="section booking-section">
+            <h2>Book Your Vaccine</h2>
+            <a href="https://docs.google.com/forms/d/1KUgLsk-Nx7mAIqwfIkKI-P_EN8tnSrv7AzBKahDbrGs/edit" class="booking-button" target="_blank">Book Now</a>
+        </section>
+    </div>
+
+    <footer>
+        Phone: 017-983 8104
+    </footer>
+</body>
+</html>
